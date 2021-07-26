@@ -1,0 +1,137 @@
+HTML5 测验一
+1.HTML5 之前的 HTML 版本是什么？
+    HTML5 是 HTML 最新的修订版本，由万维网联盟（W3C）于 2014 年 10 月完成标准制定。
+    目标是取代 1999 年所制定的 HTML 4.01 和 XHTML 1.0 标准。
+2.HTML5 的正确 doctype 是？ <!DOCTYPE html>
+3.在 HTML5 中，哪个元素用于组合标题元素？ <hgroup>
+4.HTML5 中不再支持下面哪个元素？ <font>
+5.HTML5 中不再支持下面哪个元素？ <acronym>
+6.在 HTML5 中，onblur 和 onfocus 是： 事件属性
+7.用于播放 HTML5 视频文件的正确 HTML5 元素是： <video>
+8.用于播放 HTML5 音频文件的正确 HTML5 元素是： <audio>
+9.在 HTML5 中不再支持？ rel
+10.在 HTML5 中，哪个方法用于获得用户的当前位置？ getCurrentPosition()
+
+HTML5 测验二
+1.新的 HTML5 全局属性，”contenteditable” 用于：规定元素内容是否是可编辑的。
+2.在 HTML5 中，contextmenu 和 spellcheck 是： HTML 属性
+3.在 HTML5 中，您能够直接将 SVG 元素嵌入 HTML 页面中。 正确
+4.由 SVG 定义的图形是什么格式的？ XML
+5.HTML5 中的 <canvas> 元素用于： 绘制图形
+6.哪个 HTML5 内建对象用于在画布上绘制？ getContext
+7.在 HTML5 中，哪个属性用于规定输入字段是必填的？ required
+8.哪种输入类型定义滑块控件？ range
+9.哪种输入类型用于定义周和年控件（无时区）？ week
+10.哪个 HTML5 元素用于显示已知范围内的标量测量？ <meter>
+
+HTML5 测验三
+1.___标签用于指定内联框架？ <iframe> 元素会创建包含另外一个文档的内联框架（即行内框架）。
+2.SVG 有多少种图形对象类型？ 在 SVG 中，允许三种图像对象存在，分别是向量图像、点阵图像和文本。
+3.HTML 5 支持 HTML 4 中的所有表单控件？ 正確
+4.動態HTML（Dynamic HTML) DHTML是？ 
+  DHTML 是一种使 HTML 页面具有动态特性的艺术，对大多数人来说，
+  DHTML 意味着 HTML、CSS 和 JavaScript 的组合。
+5.以下哪个是 html5 中的 input 类型属性？ 包含 email、url、number、range、search 等属性，每一种属性都具有不同的功能。
+6.Canvas 能够使用___绘制 2D 图形？ JavaScript
+7.以下哪个不是 html5 中使用的媒体元素？ <time> 标签定义日期或时间。
+8.SVG 是什么意思？ 可伸缩向量图形
+9.是否可以将 HTML 5 用于移动应用程序？ 可以
+10.input 元素的哪个类型属性将元素的值设置为表示一定范围内的数字？ 
+   具有 type 属性的 input 元素，其值为 “range”，表示将元素的值设置为包含一定范围内数字值的输入域。
+
+HTML5 测验四
+1.input 元素中，下列哪个类型属性定义了输入电话号码的控件？ 
+  具有 type 属性的 input 元素，其值为 “tel”，表示用于输入电话号码的单行纯文本编辑控件。
+2.哪个元素表示用于生成公钥-私钥对的控件？ 
+  <keygen> 标签规定用于表单的密钥对生成器字段。当提交表单时，私钥存储在本地，公钥发送到服务器。
+3.哪个元素表示标记或突出显示的文本以供参考？
+  突出显元素指定文本的重要性，mark 元素表示标记或高亮显示以供参考的文档中的文本。
+4.哪个元素表示导航部分？ nav
+5.SVG 定义的图形是_____格式的？ SVG 是基于 XML 的矢量图像格式
+6.关于 article 元素，下列哪个选项是正确的？
+  <article> 标签定义外部的内容，contenteditable 属性规定是否可编辑元素的内容。
+7.哪个属性将连续播放嵌入到 audio 元素中的音频？ loop 属性规定当音频结束后将重新开始播放
+8.下列哪个浏览器可能不支持以下代码来创建矩形: Internet Explorer 7.0
+  <canvas id="myCanvas" width="350" height="200" style="border:1px solid red;">
+  Your browser does not support the HTML5 canvas tag.
+  </canvas>
+9.下面哪个元素被称为媒体元素的子元素？ 
+  <track> 标签为媒体元素（比如 <audio> and <video>）规定外部文本轨道。
+  这个元素用于规定字幕文件或其他包含文本的文件，当媒体播放时，这些文件是可见的。
+10.哪个元素定义了 <object> 元素的参数？ 
+  param 元素允许您为插入 XHTML 文档的对象规定 run-time 设置，
+  也就是说，此标签可为包含它的 <object> 标签提供参数。
+
+HTML5 测验五
+1.哪个元素表示外部资源？ 外部资源由 元素表示，该元素可以被视为图像、嵌套的浏览上下文或插件要处理的资源。它包括各种属性，如存档、边框、分类、代码库、代码类型等
+  外部资源由 <object> 元素表示，该元素可以被视为图像、嵌套的浏览上下文或插件要处理的资源。
+  它包括各种属性，如存档、边框、分类、代码库、代码类型等
+2.哪个元素指定多个媒体资源？ <source> 元素为 <audio>、<video> 和 <picture> 元素指定多个媒体资源
+3.哪个元素不是脚本元素？ <image>
+  为了创建动态内容和 web 应用程序，HTML使用脚本语言 <canvas>、<script>、<noscript> 
+  是支持此功能的特定元素。< image > 元素用于嵌入内容。
+4.哪个元素显示任务的完成进度？ 
+  progress 元素中显示指示任务完成进度的指示器，该指示器通常显示为进度栏。
+  它还包括所有的全局属性，包括 max、value 等
+5.哪个元素创建了一组选项？
+  <optgroup> 元素在 <select>元 素中创建一组选项，此元素不应嵌套。
+  它包括全局属性，比如 disabled, label 等等
+6.哪个元素表示给定范围内的标量值 ？
+  <meter> 元素表示已知范围内的标量值或阶乘值。
+  它包括全局属性，如min、max、value、optimal、low、high、form等。
+7.哪个元素不定义属性的宽度？ 
+  <textarea>通常与 cols、dirname、disabled、form、
+  maxlength、minlength、name、placeholder, readonly, rows
+8.下列哪个选项显示 JavaScript 中函数耗费时间的进度？
+  <progress> 标签定义运行中的进度
+9.以下哪个是在 HTML5 之前已经引入的特性？ frames
+10.如果在 HTML 文档的开始部分没有使用 doctype 怎么办？
+  浏怪异模式，浏览器使用自己的怪异模式解析渲染页面。
+  因为 html 有很多版本，加入 <!doctype html> 表示你用的是
+  HTML5 的文档声明，让浏览器按照 HTML5 的标准解析你的代码。
+
+HTML5 测验六
+1.HTML5 没有删除哪个元素？
+  虽然 HTML5 加了新元素，但它也淘汰了一些旧元素，
+  如 <big>、<center>、<font>、<tt>、<strike> 等。
+  <small> 标签呈现小号字体效果没有被删除。
+2.下列哪项定义了作品的标题？ <cite>
+3.下列哪个陈述是正确的？ 
+  在 canvas 中，绘图是用像素完成的。在 SVG 中，绘图是使用向量完成的，
+  并且它支持事件处理程序。Canvas 不包含任何内置的动画，绘图是用像素完成的
+4.<main> 一般包含什么？ 文章主题部分
+5.HTML5 事件可以触发多少次？ 
+  多次。我们可以在 HTML5 中多次调用 drag、ondragover 等事件
+6.HTML5 文档可能包含一个______元素用于设置文档的标题部分？
+  header 标签用于包含站点的页眉内容
+7.内容中可以使用哪个元素来表示 <article> 标签外的内容？
+  <aside> 标签定义 <article> 标签外的内容，aside 的内容应该与附近的内容相关
+8.为同一个文件添加多种文件格式的原因是什么？
+  <source src="html_5.mp4" type="video/mp4">
+  <source src="html_5.ogv" type="video/ogg">
+  提供备份支持并解决媒体支持问题，您需要添加其他格式来使用，包括一些 source 标签
+9.要插入视频，我们需要使用 video 标签，并设置 src 属性为本地或远程 URL？ 正确
+10.在 HTML 音频/视频 DOM 中，_____设置是否在页面加载后载入视频？ preload
+11.以下哪个不是 HTML5 标签？ <slider>
+
+HTML5 测驗七
+1.如果视频加载时没有设置视频的高度和宽度，会发生什么情况？
+  如果没有设置高度和宽度，浏览器就不知道视频的大小。其效果是，当视频加载时，页面将发生变化(或闪烁)
+2.下列哪种 HTML 视频媒体类型在 IE 中不受支持？ Ogg 格式在 Internet Explorer 中不受任何方式的支持
+3.在 HTML 音频/视频 DOM 中，_____设置或返回音频/视频播放的默认速度？ defaultPlaybackRate
+4.哪个元素表示预格式化文本？
+  <pre> 标签可定义预格式化的文本。
+  被包围在 <pre> 标签 元素中的文本通常会保留空格和换行符。而文本也会呈现为等宽字体。
+5.HTML5 向后兼容旧浏览器吗？ HTML5 被设计成尽可能向后兼容现有的 web 浏览器
+6.关于 HTML5 中的自定义属性(data-*)，下列哪个选项是正确的？ 
+  自定义数据属性以 data 开始，并将根据您的需求进行命名
+  您可以使用 JavaScript 获得这些属性的值
+7.以下哪个标签用于表示 HTML5 中不同类型输出的结果？ output
+8.websocket 的 socket.readystate 属性的哪个值表示连接已建立并且可以进行通信？ 1
+9.关于 HTML5 中的地理定位 api，下列哪个选项是正确的？
+  HTML5 地理定位 API 允许您与您喜爱的 web 站点共享您的位置
+  一个 javascript 可以捕获你的纬度和经度，并可以发送到后端 Web 服务器，做一些奇特的位置感知的事情，
+  比如找到本地企业或在地图上显示你的位置
+  如今，大多数浏览器和移动设备都支持地理定位 API
+10.下列哪个属性触发中止事件？ onabort
+11.以下哪个属性在触发消息时触发事件？ onmessage

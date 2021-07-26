@@ -1,0 +1,538 @@
+聲明必須位於HTML5 文檔中的第一行,使用非常簡單:
+<!DOCTYPE html>
+HTML5 简介
+HTML5是HTML最新的修订版本，2014年10月由万维网联盟（W3C）完成标准制定。
+目标是取代 1999 年所制定的 HTML 4.01 和 XHTML 1.0 标准。
+HTML5的设计目的是为了在移动设备上支持多媒体。
+HTML5 中的一些有趣的新特性：
+    用于绘画的 canvas 元素
+    用于媒介回放的 video 和 audio 元素
+    对本地离线存储的更好的支持
+    新的特殊内容元素，比如 article、footer、header、nav、section
+    新的表单控件，比如 calendar、date、time、email、url、search
+
+HTML5 的改进
+    新元素
+    新属性
+    完全支持 CSS3
+    Video 和 Audio
+    2D/3D 制图
+    本地存储
+    本地 SQL 数据
+    Web 应用
+
+HTML5 多媒体
+    使用 HTML5 你可以简单的在网页中播放 视频(video)与音频 (audio) 。
+    标签	描述
+    <audio>	定义音频内容
+    <video>	定义视频（video 或者 movie）
+    <source>定义多媒体资源 <video> 和 <audio>
+    <embed>	定义嵌入的内容，比如插件。
+    <track>	为诸如 <video> 和 <audio> 元素之类的媒介规定外部文本轨道。
+
+HTML5 应用
+    使用 HTML5 你可以简单地开发应用
+    本地数据存储
+    访问本地文件
+    本地 SQL 数据
+    缓存引用
+    Javascript 工作者
+    XHTMLHttpRequest 2
+
+HTML5 图形
+    使用 HTML5 你可以简单的绘制图形:
+    使用 <canvas> 元素。标签定义图形，比如图表和其他图像。该标签基于 JavaScript 的绘图 API
+    使用内联 SVG。
+    使用 CSS3 2D 转换、CSS3 3D 转换。
+
+HTML5 使用 CSS3
+    新选择器
+    新属性
+    动画
+    2D/3D 转换
+    圆角
+    阴影效果
+    可下载的字体
+
+新表单元素
+    标签	描述
+    <datalist>	定义选项列表。请与 input 元素配合使用该元素，来定义 input 可能的值。
+    <output>	定义不同类型的输出，比如脚本的输出。
+
+语义元素
+    标签	描述
+    <article>	定义页面独立的内容区域。
+    <aside>	    定义页面的侧边栏内容。
+    <bdi>	    允许您设置一段文本，使其脱离其父元素的文本方向设置。
+    <command>	定义命令按钮，比如单选按钮、复选框或按钮
+    <details>	用于描述文档或文档某个部分的细节
+    <dialog>	定义对话框，比如提示框
+    <summary>	标签包含 details 元素的标题
+    <figure>	规定独立的流内容（图像、图表、照片、代码等等）。
+    <figcaption>定义 <figure> 元素的标题
+    <footer>	定义 section 或 document 的页脚。
+    <header>	定义了文档的头部区域
+    <mark>	    定义带有记号的文本。
+    <meter>	    定义度量衡。仅用于已知最大和最小值的度量。
+    <nav>	    定义导航链接的部分。
+    <progress>	定义任何类型的任务的进度。
+    <ruby>	    定义 ruby 注释（中文注音或字符）。
+    <rt>	    定义字符（中文注音或字符）的解释或发音。
+    <rp>	    在 ruby 注释中使用，定义不支持 ruby 元素的浏览器所显示的内容。
+    <section>	定义文档中的节（section、区段）。
+    <time>	    定义日期或时间。
+    <wbr>	    规定在文本中的何处适合添加换行符。
+
+=====================================HTML5 内联 SVG================================================
+    SVG 指可縮放向量圖形 (Scalable Vector Graphics)
+    SVG 用于定义用于网络的基于矢量的图形
+    SVG 使用 XML 格式定义图形
+    SVG 图像在放大或改变尺寸的情况下其图形质量不会有损失
+    SVG 是万维网联盟的标准
+SVG优势
+    SVG 图像可通过文本编辑器来创建和修改
+    SVG 图像可被搜索、索引、脚本化或压缩
+    SVG 是可伸缩的
+    SVG 图像可在任何的分辨率下被高质量地打印
+    SVG 可在图像质量不下降的情况下被放大
+实例
+    <!DOCTYPE html>
+    <html>
+    <head> 
+    <meta charset="utf-8"> 
+    <title>菜鸟教程(runoob.com)</title> 
+    </head>
+    <body>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="190">
+       <polygon points="100,10 40,180 190,60 10,60 160,180"
+       style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;"/>
+    </svg>    
+    </body>
+    </html>
+    
+Canvas 与 SVG 的比较下表列出了 canvas 与 SVG 之间的一些不同之处。
+Canvas
+    依赖分辨率
+    不支持事件处理器
+    弱的文本渲染能力
+    能够以 .png 或 .jpg 格式保存结果图像
+    最适合图像密集型的游戏，其中的许多对象会被频繁重绘
+    Canvas 是逐像素进行渲染的。
+    Canvas 通过 JavaScript 来绘制 2D 图形。
+    在 canvas 中，一旦图形被绘制完成，它就不会继续得到浏览器的关注。
+    如果其位置发生变化，那么整个场景也需要重新绘制，包括任何或许已被图形覆盖的对象。
+SVG
+    不依赖分辨率
+    支持事件处理器
+    最适合带有大型渲染区域的应用程序（比如谷歌地图）
+    复杂度高会减慢渲染速度（任何过度使用 DOM 的应用都不快）
+    不适合游戏应用
+    SVG 是一种使用 XML 描述 2D 图形的语言。  
+    SVG 基于 XML，这意味着 SVG DOM 中的每个元素都是可用的。您可以为某个元素附加 JavaScript 事件处理器。
+    在 SVG 中，每个被绘制的图形均被视为对象。如果 SVG 对象的属性发生变化，那么浏览器能够自动重现图形。
+
+====================================HTML5 MathML==================================================
+    HTML5 可以在文档中使用 MathML 元素，对应的标签是 <math>...</math> 。
+    MathML 是数学标记语言，是一种基于XML（标准通用标记语言的子集）的标准，用来在互联网上书写数学符号和公式的置标语言。
+
+====================================HTML5 语义元素=================================================
+    语义= 意义
+    语义元素 = 有意义的元素
+    一个语义元素能够清楚的描述其意义给浏览器和开发者。
+    无语义 元素实例: <div> 和 <span> - 无需考虑内容.
+    语义元素实例: <form>, <table>, and <img> - 清楚的定义了它的内容.
+    <header>
+    <nav>
+        <article><section>
+        <aside>
+     <footer>
+
+HTML5 <section> 元素
+    <section> 标签定义文档中的节（section、区段）。比如章节、页眉、页脚或文档中的其他部分。
+    根据W3C HTML5文档: section 包含了一组内容及其标题。
+    实例
+    <section>
+        <h1>WWF</h1>
+        <p>The World Wide Fund for Nature (WWF)</p>
+    </section>
+
+    <section>
+        <h1>WWF's Panda symbol</h1>
+        <p>The Panda has become the symbol of WWF.</p>
+    </section>
+
+HTML5 <article> 元素
+    <article> 标签定义独立的内容。.
+    <article> 元素使用实例:
+    Forum post;Blog post;News story;Comment
+    实例
+    <article>
+        <h1>Internet Explorer 9</h1>
+        <p>Windows Internet Explorer 9(缩写为 IE9 )在2011年3月14日21:00 发布。</p>
+    </article>
+
+HTML5 <nav> 元素
+    <nav> 标签定义导航链接的部分。
+    <nav> 元素用于定义页面的导航链接部分区域，但是，不是所有的链接都需要包含在 <nav> 元素中!
+    实例
+    <nav>
+        <a href="/html/">HTML</a> |
+        <a href="/css/">CSS</a> |
+        <a href="/js/">JavaScript</a> |
+        <a href="/jquery/">jQuery</a>
+    </nav>
+
+HTML5 <aside> 元素
+    <aside> 标签定义页面主区域内容之外的内容（比如侧边栏）。
+    aside 标签的内容应与主区域的内容相关.
+    实例
+    <p>My family and I visited The Epcot center this summer.</p>
+    <aside>
+    <h4>Epcot Center</h4>
+    <p>The Epcot Center is a theme park in Disney World, Florida.</p>
+    </aside>
+
+HTML5 <header> 元素
+    <header>元素描述了文档的头部区域
+    <header>元素主要用于定义内容的介绍展示区域.
+    在页面中你可以使用多个<header> 元素.
+    实例
+    <article>
+        <header>
+        <h1>Internet Explorer 9</h1>
+        <p><time pubdate datetime="2011-03-15"></time></p>
+        </header>
+        <p>Windows Internet Explorer 9(缩写为 IE9 )是在2011年3月14日21:00发布的</p>
+    </article>
+
+
+HTML5 <footer> 元素
+    <footer> 元素描述了文档的底部区域.
+    <footer> 元素应该包含它的包含元素
+    一个页脚通常包含文档的作者，著作权信息，链接的使用条款，联系信息等
+    文档中你可以使用多个 <footer>元素.
+    实例
+    <footer>
+    <p>Posted by: Hege Refsnes</p>
+    <p><time pubdate datetime="2012-03-01"></time></p>
+    </footer>
+
+HTML5 <figure> 和 <figcaption> 元素
+    <figure>标签规定独立的流内容（图像、图表、照片、代码等等）。
+    <figure> 元素的内容应该与主内容相关，但如果被删除，则不应对文档流产生影响。
+    <figcaption> 标签定义 <figure> 元素的标题.
+    <figcaption>元素应该被置于 "figure" 元素的第一个或最后一个子元素的位置。
+    实例
+    <p>The Pulpit Rock is a massive cliff 604 metres (1982 feet) above Lysefjorden, opposite the Kjerag plateau, in Forsand, Ryfylke, Norway. The top of the cliff is approximately 25 by 25 metres (82 by 82 feet) square and almost flat, and is a famous tourist attraction in Norway.</p>
+    <figure>
+    <img src="img_pulpit.jpg" alt="The Pulpit Rock" width="304" height="228">
+    <figcaption>Fig.1 - A view of the pulpit rock in Norway.</figcaption>
+    </figure>
+
+我们可以开始使用这些语义元素吗?
+    以上的元素都是块元素(除了<figcaption>).
+    为了让这些块及元素在所有版本的浏览器中生效，你需要在样式表文件中设置一下属性
+     (以下样式代码可以让旧版本浏览器支持本章介绍的块级元素):
+    header, section, footer, aside, nav, article, figure
+    {
+        display: block;
+    }
+
+========================================HTML5 Web 存储==============================================
+    HTML5 web 存储,一个比cookie更好的本地存储方式。
+    什么是 HTML5 Web 存储?
+    使用HTML5可以在本地存储用户的浏览数据。
+    早些时候,本地存储使用的是 cookie。但是Web 存储需要更加的安全与快速. 
+    这些数据不会被保存在服务器上，但是这些数据只用于用户请求网站数据上.它也可以存储大量的数据，而不影响网站的性能.
+    数据以 键/值 对存在, web网页的数据只允许该网页访问使用。
+
+localStorage 和 sessionStorage 
+    客户端存储数据的两个对象为：    
+    localStorage - 用于长久保存整个网站的数据，保存的数据没有过期时间，直到手动去除。
+    sessionStorage - 用于临时保存同一窗口(或标签页)的数据，在关闭窗口或标签页之后将会删除这些数据。
+    在使用 web 存储前,应检查浏览器是否支持 localStorage 和sessionStorage:
+    if(typeof(Storage)!=="undefined")
+    {
+        // 是的! 支持 localStorage  sessionStorage 对象!
+        // 一些代码.....
+    } else {
+        // 抱歉! 不支持 web 存储。
+    }
+
+localStorage 对象
+    localStorage 对象存储的数据没有时间限制。第二天、第二周或下一年之后，数据依然可用。
+    实例
+    localStorage.sitename="菜鸟教程";
+    document.getElementById("result").innerHTML="网站名：" + localStorage.sitename;
+    
+    实例解析：
+    使用 key="sitename" 和 value="菜鸟教程" 创建一个 localStorage 键/值对。
+    检索键值为"sitename" 的值然后将数据插入 id="result"的元素中。
+
+不管是 localStorage，还是 sessionStorage，可使用的API都相同，常用的有如下几个（以localStorage为例）：
+    保存数据：localStorage.setItem(key,value);
+    读取数据：localStorage.getItem(key);
+    删除单个数据：localStorage.removeItem(key);
+    删除所有数据：localStorage.clear();
+    得到某个索引的key：localStorage.key(index);
+    提示: 键/值对通常以字符串存储，你可以按自己的需要转换该格式。
+    
+下面的实例展示了用户点击按钮的次数。
+    代码中的字符串值转换为数字类型:
+    实例
+    if (localStorage.clickcount)
+    {
+        localStorage.clickcount=Number(localStorage.clickcount)+1;
+    }
+    else
+    {
+        localStorage.clickcount=1;
+    }
+    document.getElementById("result").innerHTML=" 你已经点击了按钮 " + localStorage.clickcount + " 次 ";
+
+sessionStorage 对象
+    sessionStorage 方法针对一个 session 进行数据存储。当用户关闭浏览器窗口后，数据会被删除。
+    如何创建并访问一个 sessionStorage：
+    实例
+    if (sessionStorage.clickcount)
+    {
+        sessionStorage.clickcount=Number(sessionStorage.clickcount)+1;
+    }
+    else
+    {
+        sessionStorage.clickcount=1;
+    }
+    document.getElementById("result").innerHTML="在这个会话中你已经点击了该按钮 " + sessionStorage.clickcount + " 次 ";
+
+====================================HTML5 应用程序缓存=======================================
+    使用 HTML5，通过创建 cache manifest 文件，可以轻松地创建 web 应用的离线版本。   
+    什么是应用程序缓存（Application Cache）？
+    HTML5 引入了应用程序缓存，这意味着 web 应用可进行缓存，并可在没有因特网连接时进行访问。
+    
+应用程序缓存为应用带来三个优势：
+    离线浏览 - 用户可在应用离线时使用它们
+    速度 - 已缓存资源加载得更快
+    减少服务器负载 - 浏览器将只从服务器下载更新过或更改过的资源。
+
+HTML5 Cache Manifest 实例
+        下面的例子展示了带有 cache manifest 的 HTML 文档（供离线浏览）：
+        实例
+        <!DOCTYPE html>
+        <html manifest="demo_html.appcache">
+        <head> 
+        <meta charset="UTF-8">
+        <title>菜鸟教程(runoob.com)</title> 
+        </head>
+        <body>
+        <script src="demo_time.js">
+        </script>
+        <p id="timePara"><button onclick="getDateTime()">获取日期和时间</button></p>
+        <p><img src="logo.png" width="336" height="69"></p>
+        <p>尝试打开 <a href="tryhtml5_html_manifest.htm" target="_blank">这个页面</a>, 在离线的状态下重新载入这个页面，页面也可以访问。</p>
+        </body>
+        </html>
+    
+Cache Manifest 基础
+    如需启用应用程序缓存，请在文档的<html> 标签中包含 manifest 属性：
+
+    <!DOCTYPE HTML>
+    <html manifest="demo.appcache">
+    ...
+    </html>
+    
+    每个指定了 manifest 的页面在用户对其访问时都会被缓存。如果未指定 manifest 属性，则页面不会被缓存（除非在 manifest 文件中直接指定了该页面）。
+    manifest 文件的建议的文件扩展名是：".appcache"。
+    请注意，manifest 文件需要配置正确的 MIME-type，
+    即 "text/cache-manifest"。必须在 web 服务器上进行配置。
+    
+Manifest 文件
+    manifest 文件是简单的文本文件，它告知浏览器被缓存的内容（以及不缓存的内容）。
+    manifest 文件可分为三个部分：
+    CACHE MANIFEST - 在此标题下列出的文件将在首次下载后进行缓存
+    NETWORK - 在此标题下列出的文件需要与服务器的连接，且不会被缓存
+    FALLBACK - 在此标题下列出的文件规定当页面无法访问时的回退页面（比如 404 页面）
+
+CACHE MANIFEST
+    第一行，CACHE MANIFEST，是必需的：
+    CACHE MANIFEST
+    /theme.css
+    /logo.gif
+    /main.js
+
+    上面的 manifest 文件列出了三个资源：一个 CSS 文件，一个 GIF 图像，
+    以及一个 JavaScript 文件。当 manifest 文件加载后，浏览器会从网站的根目录下载这三个文件。
+    然后，无论用户何时与因特网断开连接，这些资源依然是可用的。
+
+NETWORK
+    下面的 NETWORK 小节规定文件 "login.php" 永远不会被缓存，且离线时是不可用的：
+    NETWORK:
+    login.php
+    可以使用星号来指示所有其他资源/文件都需要因特网连接：
+    NETWORK:
+    *
+
+FALLBACK
+    下面的 FALLBACK 小节规定如果无法建立因特网连接，则用 "offline.html" 替代 /html5/ 目录中的所有文件：
+    FALLBACK:
+    /html/ /offline.html
+    注意: 第一个 URI 是资源，第二个是替补。
+    
+更新缓存
+    一旦应用被缓存，它就会保持缓存直到发生下列情况：
+    用户清空浏览器缓存
+    manifest 文件被修改（参阅下面的提示）
+    由程序来更新应用缓存
+    实例 - 完整的 Manifest 文件
+    CACHE MANIFEST
+    # 2012-02-21 v1.0.0
+    /theme.css
+    /logo.gif
+    /main.js
+    
+    NETWORK:
+    login.php
+    
+    FALLBACK:
+    /html/ /offline.html
+    提示:以 "#" 开头的是注释行，但也可满足其他用途。应用的缓存会在其 manifest 文件更改时被更新。
+    如果您编辑了一幅图片，或者修改了一个 JavaScript 函数，这些改变都不会被重新缓存。
+    更新注释行中的日期和版本号是一种使浏览器重新缓存文件的办法。
+    
+关于应用程序缓存的说明
+    请留心缓存的内容。
+    一旦文件被缓存，则浏览器会继续展示已缓存的版本，即使您修改了服务器上的文件。
+    为了确保浏览器更新缓存，您需要更新 manifest 文件。
+    注意: 浏览器对缓存数据的容量限制可能不太一样（某些浏览器设置的限制是每个站点 5MB）。
+
+=====================================HTML5 Web Workers==========================================
+web worker 是运行在后台的 JavaScript，不会影响页面的性能。
+什么是 Web Worker？
+当在 HTML 页面中执行脚本时，页面的状态是不可响应的，直到脚本已完成。
+web worker 是运行在后台的 JavaScript，独立于其他脚本，不会影响页面的性能。
+您可以继续做任何愿意做的事情：点击、选取内容等等，而此时 web worker 在后台运行。
+
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+</head>
+<body>
+
+<p>计数： <output id="result"></output></p>
+<button onclick="startWorker()">开始工作</button> 
+<button onclick="stopWorker()">停止工作</button>
+
+<p><strong>注意：</strong> Internet Explorer 9 及更早 IE 版本浏览器不支持 Web Workers.</p>
+
+<script>
+var w;
+
+function startWorker() {
+    // 在创建 web worker 之前，请检测用户的浏览器是否支持它：
+    if(typeof(Worker) !== "undefined") { 
+        if(typeof(w) == "undefined") { // 检测是否存在 worker，如果不存在，- 它会创建一个新的 web worker 对象，
+            w = new Worker("demo_workers.js");  //在一个外部 JavaScript 中创建我们的 web worker。
+        }
+        w.onmessage = function(event) { //从 web worker 发生和接收消息
+            document.getElementById("result").innerHTML = event.data;
+        };
+    } else {
+        document.getElementById("result").innerHTML = "抱歉，你的浏览器不支持 Web Workers...";
+    }
+}
+
+function stopWorker() 
+{ 
+    w.terminate(); // 如需终止 web worker，并释放浏览器/计算机资源，请使用 terminate() 方法：
+    w = undefined;
+}
+</script>
+
+</body>
+</html>
+
+Web Workers 和 DOM：由于 web worker 位于外部文件中，它们无法访问下列 JavaScript 对象：
+    window 对象
+    document 对象
+    parent 对象
+
+=========================HTML5 服务器发送事件(Server-Sent Events)===================================
+    HTML5 服务器发送事件（server-sent event）允许网页获得来自服务器的更新。
+    Server-Sent 事件 - 单向消息传递
+    Server-Sent 事件指的是网页自动获取来自服务器的更新。
+    以前也可能做到这一点，前提是网页不得不询问是否有可用的更新。
+    通过服务器发送事件，更新能够自动到达。
+    例子：Facebook/Twitter 更新、股价更新、新的博文、赛事结果等。
+
+接收 Server-Sent 事件通知
+EventSource 对象用于接收服务器发送事件通知：
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
+    </head>
+    <body>
+    <h1>获取服务端更新数据</h1>
+    <div id="result"></div>
+
+    <script>
+    if(typeof(EventSource)!=="undefined") //检测 Server-Sent 事件 、检测服务器发送事件的浏览器支持情况：
+    {
+        var source=new EventSource("demo_sse.php");
+        source.onmessage=function(event)
+        {
+            document.getElementById("result").innerHTML+=event.data + "<br>";
+        };
+    }
+    else
+    {
+        document.getElementById("result").innerHTML="抱歉，你的浏览器不支持 server-sent 事件...";
+    }
+    </script>
+
+    </body>
+    </html>
+
+实例解析：
+    创建一个新的 EventSource 对象，然后规定发送更新的页面的 URL（本例中是 "demo_sse.php"）
+    每接收到一次更新，就会发生 onmessage 事件
+    当 onmessage 事件发生时，把已接收的数据推入 id 为 "result" 的元素中
+
+服务器端代码实例
+    为了让上面的例子可以运行，您还需要能够发送数据更新的服务器（比如 PHP 和 ASP）。
+    服务器端事件流的语法是非常简单的。把 "Content-Type" 报头设置为 "text/event-stream"。
+    现在，您可以开始发送事件流了。 
+实例
+    <?php
+    header('Content-Type: text/event-stream');
+    header('Cache-Control: no-cache');
+    
+    $time = date('r');
+    echo "data: The server time is: {$time}\n\n";
+    flush();
+    ?>
+
+ASP 代码 (VB) (demo_sse.asp):
+    <%
+    Response.ContentType="text/event-stream"
+    Response.Expires=-1
+    Response.Write("data: " & now())
+    Response.Flush()
+    %>
+    
+代码解释:
+    把报头 "Content-Type" 设置为 "text/event-stream"
+    规定不对页面进行缓存
+    输出发送日期（始终以 "data: " 开头）
+    向网页刷新输出数据
+
+EventSource 对象
+    在上面的例子中，我们使用 onmessage 事件来获取消息。不过还可以使用其他事件：
+    事件	    描述
+    onopen	    当通往服务器的连接被打开
+    onmessage	当接收到消息
+    onerror	    当发生错误
+    
+    HTML5 测验一

@@ -1,0 +1,91 @@
+<form action="">
+    First name: <input type="text" name="firstname"><br>
+    Last name: <input type="text" name="lastname">
+    Password: <input type="password" name="pwd">
+</form>     
+
+<!-- 單選按鈕（Radio Buttons）
+<input type="radio"> 標籤定義了表單單選框選項 -->
+<form>
+<input type="radio" name="sex" value="male">Male<br>
+<input type="radio" name="sex" value="female">Female
+</form>
+
+<!-- 複選框（Checkboxes）
+<input type="checkbox"> 定義了複選框. 
+用戶需要從若干給定的選擇中選取一個或若干選項。 -->
+<form>
+<input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
+<input type="checkbox" name="vehicle" value="Car">I have a car
+</form>
+
+<!-- 提交按鈕(Submit Button)
+<input type="submit"> 定義了提交按鈕.
+當用戶單擊確認按鈕時，表單的內容會被傳送到另一個文件。
+表單的動作屬性定義了目的文件的文件名。
+由動作屬性定義的這個文件通常會對接收到的輸入數據進行相關的處理。
+假如您在上面的文本框內鍵入幾個字母，然後點擊確認按鈕，
+那麼輸入數據會傳送到"html_form_action.php" 的頁面。該頁面將顯示出輸入的結果。
+-->
+<form name="input" action="html_form_action.php" method="get">
+Username: <input type="text" name="user">
+<input type="submit" value="Submit">
+<input type="reset" value="重置">
+</form>
+
+<!-- 創建簡單的下拉列錶框。下拉列錶框是一個可選列表。 
+    selected> 預選值的下拉列表。
+-->
+<form action="">
+    <select name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat" selected>Fiat</option>
+        <option value="audi">Audi</option>
+    </select>
+</form>    
+
+<!-- 創建按鈕。你可以對按鈕上的文字進行自定義。 -->
+<form action="">
+    <input type="button" value="Hello world!">
+</form>
+
+<!-- 帶邊框的表單 -->
+<form action="">
+<fieldset>
+    <legend>Personal information:</legend>
+    Name: <input type="text" size="30"><br>
+    E-mail: <input type="text" size="30"><br>
+    Date of birth: <input type="text" size="10">
+</fieldset>
+</form>
+
+<!-- HTML 表單是一個包含表單元素的區域。
+表單元素是允許用戶在表單中輸入內容,比如：文本域(textarea)、
+下拉列表、單選框(radio-buttons)、複選框(checkboxes)等等。
+表單使用表單標籤<form> 來設置:。并且注意一个文本字段的默认宽度是20个字符。 -->
+
+<!-- HTML 表單- 輸入元素
+多數情況下被用到的表單標籤是輸入標籤（<input>）。
+輸入類型是由類型屬性（type）定義的。大多數經常被用到的輸入類型如下：
+文本域（Text Fields）文本域通過<input type="text"> 標籤來設定，
+當用戶要在表單中鍵入字母、數字等內容時，就會用到文本域。 -->
+
+
+<!-- HTML 表單標籤
+New : HTML5新標籤
+
+標籤	    描述
+<form>	    定義供用戶輸入的表單
+<input  >	定義輸入域
+<textarea>	定義文本域(一個多行的輸入控件)
+<label>	    定義了<input> 元素的標籤，一般為輸入標題
+<fieldset>	定義了一組相關的表單元素，並使用外框包含起來
+<legend>	定義了<fieldset> 元素的標題
+<select>	定義了下拉選項列表
+<optgroup>	定義選項組
+<option>	定義下拉列表中的選項
+<button>	定義一個點擊按鈕
+<datalist>New	指定一個預先定義的輸入控件選項列表
+<keygen>New	定義了表單的密鑰對生成器字段
+<output>New	定義一個計算結果 -->

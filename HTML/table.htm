@@ -1,0 +1,173 @@
+<!-- HTML 表格
+表格由<table> 標籤來定義。每個表格均有若干行（由<tr> 標籤定義），
+每行被分割為若干單元格（由<td> 標籤定義）。字母td 指表格數據（table data），
+即數據單元格的內容。數據單元格可以包含文本、圖片、列表、段落、表單、水平線、表格等等。 -->
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+</head>
+<body>
+
+<p>
+每个表格从一个 table 标签开始。 
+每个表格行从 tr 标签开始。
+每个表格的数据从 td 标签开始。
+</p>
+
+
+<table border="1">
+  <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+  </tr>
+  <tr>
+      <td>row 1, cell 1</td>
+      <td>row 1, cell 2</td>
+  </tr>
+  <tr>
+      <td>row 2, cell 1</td>
+      <td>row 2, cell 2</td>
+  </tr>
+</table>
+<!-- 單元格邊距(Cell padding) -->
+<h4>一列:</h4>
+<table border="1" cellpadding="20">
+  <tr>
+    <td>100</td>
+  </tr>
+</table>
+<!-- 單元格間距(Cell spacing) -->
+<h4>一行三列:</h4>
+<table border="1" cellspacing="15">
+  <tr>
+    <td>100,500</td>
+    <td>200</td>
+    <td>300</td>
+  </tr>
+</table>
+
+<h4>两行三列:</h4>
+<table border="1">
+  <caption>Monthly_savings</caption>
+  <tr>
+    <td>100</td>
+    <td>200</td>
+    <td>300</td>
+  </tr>
+  <tr>
+    <td>400</td>
+    <td>500</td>
+    <td>600</td>
+  </tr>
+</table>
+<h4>水平标题:</h4>
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Telephone</th>
+    <th>Telephone</th>
+  </tr>
+  <tr>
+    <td>Bill Gates</td>
+    <td>555 77 854</td>
+    <td>555 77 855</td>
+  </tr>
+</table>
+
+<h4>垂直标题:</h4>
+<table border="1">
+  <tr>
+    <th>First Name:</th>
+    <td>Bill Gates</td>
+  </tr>
+  <tr>
+    <th>Telephone:</th>
+    <td>555 77 854</td>
+  </tr>
+  <tr>
+    <th>Telephone:</th>
+    <td>555 77 855</td>
+  </tr>
+</table>
+
+<h4>單元格跨兩列:</h4>
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th colspan="2">Telephone</th>
+  </tr>
+  <tr>
+    <td>Bill Gates</td>
+    <td>555 77 854</td>
+    <td>555 77 855</td>
+  </tr>
+</table>
+
+<h4>單元格跨兩行:</h4>
+<table border="1">
+  <tr>
+    <th>First Name:</th>
+    <td>Bill Gates</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Telephone:</th>
+    <td>555 77 854</td>
+  </tr>
+  <tr>
+    <td>555 77 855</td>
+  </tr>
+</table>
+
+<h4>表格內的標籤</h4>
+<table border="1">
+  <tr>
+    <td>
+     <p>这是一个段落</p>
+     <p>这是另一个段落</p>
+    </td>
+    <td>这个单元格包含一个表格:
+     <table border="1">
+     <tr>
+       <td>A</td>
+       <td>B</td>
+     </tr>
+     <tr>
+       <td>C</td>
+       <td>D</td>
+     </tr>
+     </table>
+    </td>
+  </tr>
+  <tr>
+    <td>这个单元格包含一个列表
+     <ul>
+      <li>apples</li>
+      <li>bananas</li>
+      <li>pineapples</li>
+     </ul>
+    </td>
+    <td>HELLO</td>
+  </tr>
+</table>
+
+<textarea rows="10" cols="30">
+  我是一个文本框。
+</textarea>
+
+</body>
+</html>
+
+<!-- HTML 表格標籤
+標籤描述
+<table> 定義表格
+<th> 定義表格的表頭
+<tr> 定義表格的行
+<td> 定義表格單元
+<caption> 定義表格標題
+<colgroup> 定義表格列的組
+<col> 定義用於表格列的屬性
+<thead> 定義表格的頁眉
+<tbody> 定義表格的主體
+<tfoot> 定義表格的頁腳 -->

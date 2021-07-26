@@ -1,0 +1,186 @@
+<!-- HTML教程- (HTML5標準)
+超文本標記語言（英語：HyperText Markup Language，簡稱：HTML）
+是一種用於創建網頁的標準標記語言。
+您可以使用HTML來建立自己的WEB 站點，HTML 運行在瀏覽器上，由瀏覽器來解析。 -->
+
+<!-- HTML 標籤
+HTML標籤是由尖括號包圍的關鍵詞，比如 <標籤>內容</標籤>
+HTML標籤通常是成對出現的，比如<b>和</b>
+標籤對中的第一個標籤是開始標籤，第二個標籤是結束標籤 -->
+
+<!-- HTML 編輯器推薦
+可以使用專業的HTML 編輯器來編輯HTML，菜鳥教程為大家推薦幾款常用的編輯器：
+VS Code：https://code.visualstudio.com/
+Sublime Text：http://www.sublimetext.com/
+你可以從以上軟件的官網中下載對應的軟件，按步驟安裝即可。 -->
+
+<!-- <!DOCTYPE>聲明有助於瀏覽器中正確顯示網頁。 -->
+<!DOCTYPE html>
+<html>
+<!-- <head>元素包含了文檔的元（meta）數據， HTML <head> 元素
+<head> 元素包含了所有的頭部標籤元素。在<head>元素中你可以插入腳本（scripts）, 樣式文件（CSS），及各種meta信息。
+可以添加在頭部區域的元素標籤為: <title>, <style>, <meta>, <link>, <script>, <noscript> 和<base>。-->
+<head>
+<!-- 對於中文網頁需要使用<meta charset="utf-8">聲明編碼，否則會出現亂碼。 -->
+<meta charset="utf-8"> 
+<!-- <link> 標籤定義了文檔與外部資源之間的關係。<link>標籤通常用於鏈接到樣式表 -->
+<link rel="stylesheet" type="text/css" href="style.css">
+<!-- 在<style> 元素中你也可以直接添加樣式來渲染HTML 文檔: -->
+<style type = "text/css" > 
+    body { background-color : rgb(150, 220, 238) } 
+    p { color : blue } </style>
+<!-- <title>元素描述了文檔的標題 -->
+<title>菜鳥教程(runoob.com)</title>
+</head>
+<!-- <body>元素包含了可見的頁面內容 -->
+<body>
+<!-- <h1>元素定義一個大標題 h1(大) ~ h6(小) 控制標題大小-->
+    <h1>我的第一個標題</h1>
+    <h3>我的第二個標題</h3>
+<!-- <hr/> 水平線 -->
+    <hr/>
+    <h6>我的第三個標題</h6>
+<!-- <p>元素定義一個段落 -->
+    <p style="font-family:arial;color:red;font-size:20px;">一個段落。</p>
+    <p style="color:blue;margin-left:100px;">這是一個段落。</p>
+<!-- <br>元素定義換行 -->
+    <p>另一個<br>段落。<br></p>
+<!-- <a href="https://...."> 超連結 </a>  在href"屬性"中指定連結的位址。 -->
+    <a href="https://www.runoob.com">這是一個連結</a><br>
+<!-- 屬性	描述
+    class	為html元素定義一個或多個類名（classname）(類名從樣式文件引入) （引號裡面可以填入多個class屬性）
+    id	    定義元素的唯一id （只能填寫一個，多個無效）
+    style	規定元素的行內樣式（inline style）
+    title	描述了元素的額外信息(作為工具條使用) -->
+    <a href="https://www.runoob.com/tags/html-reference.html">標籤屬性查詢</a><br>  
+<!-- <img src="123.jpg" /> HTML 圖像是通過標籤<img> 來定義的. -->
+    <img src="/logo.jpg" style="float:right" width="36" height="36" />
+    <!-- 創建圖片連結: -->
+    <p>
+    <a href="//www.runoob.com/html/html-tutorial.html">
+    <img src="hackanm.gif" alt="Computer man" width="48" height="48"></a></p><br>
+<!-- 通常標籤<strong>替換加粗標籤<b>來使用, <em>替換<i>標籤使用。 -->
+    <b>加粗文本</b><br>
+    <i>斜體文本</i><br>
+    <code>電腦自動輸出</code><br>
+    <sub>下標</sub> 和 <sup>上標</sup><br>
+    <strong>"這個文本是加粗的"</strong><br>
+    <small>這個文本是缩小的</small><br>
+    <pre>1      3  4 5</pre>
+    <abbr title="etcetera">etc.</abbr>
+    <p><bdo dir="rtl">該段落文字從右到左顯示。</bdo></p>
+    <p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+    <address>
+        Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br> 
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA </address>
+<!-- 創建帶有可供點擊區域的圖像地圖。其中的每個區域都是一個超級鏈接。 -->
+    <p>點擊太陽或其他行星，注意變化：</p>
+    <img src="planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+    <map name="planetmap">
+        <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm">
+        <area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm">
+        <area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
+  ​  
+<!-- iframe可以顯示一個目標鏈接的頁面
+注意：因為一個標籤的目標屬性是名為 iframe_a 的 iframe 框架，
+所以在點擊鏈接時頁面會顯示在 iframe 框架中。 -->
+    <iframe src="table.htm" name="iframe_a"></iframe>
+    <p><a href="http://www.runoob.com" target="iframe_a" rel="noopener">RUNOOB.COM</a></p>
+       
+</body>
+</html>
+
+<!-- HTML 表現標籤
+標籤  描述
+<div> 定義了文檔的區域，塊級（block-level）
+<span>組合文檔中的行內元素，內聯元素(inline) -->
+
+<!-- alt="Computer man" >
+alt屬性包含一條對圖像的文本描述，這不是強制性的，但對可訪問性而言，
+它難以置信地有用——屏幕閱讀器會將這些描述讀給需要使用閱讀器的使用者聽，
+讓他們知道圖像的含義。如果由於某種原因無法加載圖像，
+普通瀏覽器也會在頁面上顯示alt屬性中的備用文本：例如，網絡錯誤、內容被屏蔽或鏈接過期時。 -->
+
+<!-- height（高度） 與width（寬度）屬性用於設置圖像的高度與寬度。
+指定圖像的高度和寬度是一個很好的習慣。如果圖像指定了高度寬度，頁面加載時就會保留指定的尺寸。
+如果沒有指定圖片的大小，加載頁面時有可能會破壞HTML頁面的整體佈局。 -->
+
+<!-- style="float:left" 一個帶圖片的段落，圖片浮動在這個文本的左邊。 -->
+
+<!-- HTML 颜色值
+由一个十六进制符号来定义，这个符号由红色、绿色和蓝色的值组成（RGB）。
+每种颜色的最小值是0（十六进制：#00）。最大值是255（十六进制：#FF）。 
+三種顏色紅，綠，藍的組合從0到255，一共有1600萬種不同顏色(256 x 256 x 256)。-->
+
+<!-- HTML <script> 標籤
+<script> 標籤用於定義客戶端腳本，比如JavaScript。
+<script> 元素既可包含腳本語句，也可通過src 屬性指向外部腳本文件。
+JavaScript 最常用於圖片操作、表單驗證以及內容動態更新。 -->
+
+<!-- HTML <noscript> 標籤
+<noscript> 標籤提供無法使用腳本時的替代內容，
+比方在瀏覽器禁用腳本時，或瀏覽器不支持客戶端腳本時。
+<noscript>元素可包含普通HTML 頁面的body 元素中能夠找到的所有元素。 -->
+
+<!-- HTML統一資源定位器(Uniform Resource Locators)
+URL 是一個網頁地址。
+URL可以由字母組成，如"runoob.com"，或互聯網協議（IP）地址： 192.68.20.50。
+大多數人進入網站使用網站域名來訪問，因為名字比數字更容易記住。
+<方案：//主機。域：端口/路徑/文件名>
+說明:
+    scheme - 定義因特網服務的類型。最常見的類型是http
+    host - 定義域主機（http 的默認主機是www）
+    domain - 定義因特網域名，比如runoob.com
+    :port - 定義主機上的端口號（http 的默認端口號是80）
+    path - 定義服務器上的路徑（如果省略，則文檔必須位於網站的根目錄中）。
+    filename - 定義文檔/資源的名稱
+常見的URL Scheme
+    方案	訪問	            用於...
+    http	超文本傳輸協議	    以http:// 開頭的普通網頁。不加密。
+    https	安全超文本傳輸協議	安全網頁，加密所有信息交換。
+    FTP	    文件傳輸協議	    用於將文件下載或上傳至網站。
+    文件	 	                您計算機上的文件。
+
+URL 字符編碼
+    URL只能使用 ASCII字符集.  
+    來通過因特網進行發送。由於URL 常常會包含ASCII 集合之外的字符，
+    URL 必須轉換為有效的ASCII 格式。
+    URL 編碼使用"%" 其後跟隨兩位的十六進制數來替換非ASCII 字符。
+    URL 不能包含空格。URL 編碼通常使用+ 來替換空格。 -->
+
+<!-- 如何将 HTML 转换为 XHTML
+添加一个 XHTML <!DOCTYPE> 到你的网页中
+添加 xmlns 属性添加到每个页面的html元素中。
+改变所有的元素为小写
+关闭所有的空元素
+修改所有的属性名称为小写
+所有属性值添加引号 -->
+
+<!-- 兩種HTTP 請求方法：GET 和POST
+在客戶機和服務器之間進行請求-響應時，兩種最常被用到的方法是：GET 和POST。
+GET -從指定的資源請求數據。
+    有關GET 請求的其他一些註釋：
+    GET 請求可被緩存
+    GET 請求保留在瀏覽器歷史記錄中
+    GET 請求可被收藏為書籤
+    GET 請求不應在處理敏感數據時使用
+    GET 請求有長度限制
+    GET 請求只應當用於取回數據
+
+POST -向指定的資源提交要被處理的數據。
+有關POST 請求的其他一些註釋：
+    POST 請求不會被緩存
+    POST 請求不會保留在瀏覽器歷史記錄中
+    POST 不能被收藏為書籤
+    POST 請求對數據長度沒有要求
+
+其他HTTP 請求方法
+    方法	描述
+    HEAD	与 GET 相同，但只返回 HTTP 报头，不返回文档主体。
+    PUT	    上传指定的 URI 表示。
+    DELETE	删除指定资源。
+    OPTIONS	返回服务器支持的 HTTP 方法。
+    CONNECT	把请求连接转换到透明的 TCP/IP 通道。 -->

@@ -1,0 +1,19 @@
+/* CSS - HTML 樣式
+CSS (Cascading Style Sheets) 用於渲染HTML元素標籤的樣式。 */
+
+/* CSS可以通過以下方式添加到HTML中：
+1.內嵌樣式-在HTML元素中使用"style"屬性
+2.內部樣式表 - 在HTML文檔頭部<head>區域使用<style>元素來包含CSS
+3.外部引用 - 使用外部 CSS 文件 <head> <link rel = "stylesheet" type = "text/css" href = "style.css" > </head>*/
+
+/* 使用背景色屬性（background-color）定義一個元素的背景顏色：
+<h2 style="background-color:red;">这是一个标题</h2>
+<p style="background-color:green;">这是一个段落。</p>
+
+使用font-family（字體），color（顏色），和font-size（字體大小）屬性來定義字體的樣式:
+<h1 style="font-family:verdana;">一个标题</h1>
+<p style="font-family:arial;color:red;font-size:20px;">一个段落。</p>
+
+使用text-align（文字對齊）屬性指定文本的水平與垂直對齊方式：
+<h1 style="text-align:center;">居中对齐的标题</h1> */
+

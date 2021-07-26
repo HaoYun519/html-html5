@@ -1,0 +1,148 @@
+<!-- HTML 多媒体
+Web 上的多媒体指的是音效、音乐、视频和动画。
+现代网络浏览器已支持很多多媒体格式。
+
+什么是多媒体？
+多媒体来自多种不同的格式。它可以是您听到或看到的任何内容，文字、图片、音乐、音效、录音、电影、动画等等。
+在因特网上，您会经常发现嵌入网页中的多媒体元素，现代浏览器已支持多种多媒体格式。
+在本教程中，您将了解到不同的多媒体格式，以及如何在您的网页中使用它们。
+
+浏览器支持
+第一款因特网浏览器只支持文本，而且即使是对文本的支持也仅限于单一字体和单一颜色。随后诞生了支持颜色、字体和文本样式的浏览器，图片支持也被加入。
+不同的浏览器以不同的方式处理对音效、动画和视频的支持。某些元素能够以内联的方式处理，而某些则需要额外的插件。
+
+
+多媒体格式
+格式 多媒体元素（比如视频和音频）存储于媒体文件中。
+确定媒体类型的最常用的方法是查看文件扩展名。当浏览器得到文件扩展名 .htm 或 .html 时，它会假定该文件是 HTML 页面。.xml 扩展名指示 XML 文件，而 .css 扩展名指示样式表。图片格式则通过 .gif 或 .jpg 来识别。
+多媒体元素也拥有带有不同扩展名的文件格式，比如 .swf、.wmv、.mp3 以及 .mp4。
+
+视频格式
+MP4是互联网推出新的视频格式。
+YouTube 推荐使用 MP4 。
+Flash Players 支持 MP4
+HTML5 支持 MP4。
+格式	文件	描述
+AVI  .avi	    AVI (Audio Video Interleave) 格式是由微软开发的。所有运行 Windows 的计算机都支持 AVI 格式。它是因特网上很常见的格式，但非 Windows 计算机并不总是能够播放。
+WMV	 .wmv	    Windows Media 格式是由微软开发的。Windows Media 在因特网上很常见，但是如果未安装额外的（免费）组件，就无法播放 Windows Media 电影。一些后期的 Windows Media 电影在所有非 Windows 计算机上都无法播放，因为没有合适的播放器。
+MPEG .mpg/.mpeg MPEG (Moving Pictures Expert Group) 格式是因特网上最流行的格式。它是跨平台的，得到了所有最流行的浏览器的支持。
+QuickTime .mov	QuickTime 格式是由苹果公司开发的。QuickTime 是因特网上常见的格式，但是 QuickTime 电影不能在没有安装额外的（免费）组件的 Windows 计算机上播放。
+RealVideo .rm/.ram RealVideo 格式是由 Real Media 针对因特网开发的。该格式允许低带宽条件下（在线视频、网络电视）的视频流。由于是低带宽优先的，质量常会降低。
+Flash .swf/.flv Flash (Shockwave) 格式是由 Macromedia 开发的。Shockwave 格式需要额外的组件来播放。但是该组件会预装到 Firefox 或 IE 之类的浏览器上。
+Mpeg-4	.mp4	Mpeg-4 (with H.264 video compression) 是一种针对因特网的新格式。事实上，YouTube 推荐使用 MP4。YouTube 接收多种格式，然后全部转换为 .flv 或 .mp4 以供分发。越来越多的视频发布者转到 MP4，将其作为 Flash 播放器和 HTML5 的因特网共享格式。
+最新的 HTML5 标准只支持 MP4, WebM, 和 Ogg 视频格式。
+
+声音格式
+MP3是一种音频压缩技术，其全称是动态影像专家压缩标准音频层面3（Moving Picture Experts Group Audio Layer III），简称为MP3。它被设计用来大幅度地降低音频数据量。如果你的站点是音乐类型的，你可以选择mp3格式。
+格式	文件	 描述
+MIDI .mid/.midi MIDI (Musical Instrument Digital Interface) 是一种针对电子音乐设备（比如合成器和声卡）的格式。MIDI 文件不含有声音，但包含可被电子产品（比如声卡）播放的数字音乐指令。
+                因为 MIDI 格式仅包含指令，所以 MIDI 文件极其小巧。上面的例子只有 23k 的大小，但却能播放将近 5 分钟。MIDI 得到了广泛的平台上的大量软件的支持。大多数流行的网络浏览器都支持 MIDI。
+
+RealAudio .rm/.ram RealAudio 格式是由 Real Media 针对因特网开发的。该格式也支持视频。该格式允许低带宽条件下的音频流（在线音乐、网络音乐）。由于是低带宽优先的，质量常会降低。
+Wave .wav	    Wave (waveform) 格式是由 IBM 和微软开发的。所有运行 Windows 的计算机和所有网络浏览器（除了 Google Chrome）都支持它。
+WMA	 .wma	    WMA 格式 (Windows Media Audio)，质量优于 MP3，兼容大多数播放器，除了 iPod。WMA 文件可作为连续的数据流来传输，这使它对于网络电台或在线音乐很实用。
+MP3	.mp3/.mpga  MP3 文件实际上是 MPEG 文件的声音部分。MPEG 格式最初是由运动图像专家组开发的。MP3 是其中最受欢迎的针对音乐的声音格式。期待未来的软件系统都支持它。
+HTML5 的最新标准支持 MP3, WAV, 和 Ogg 音频格式。 -->
+
+<!-- HTML插件
+插件的功能是擴展HTML 瀏覽器的功能。
+輔助應用程序（helper application）是可由瀏覽器啟動的程序。輔助應用程序也稱為插件。
+輔助程序可用於播放音頻和視頻（以及其他）。輔助程序是使用<object> 標籤來加載的。
+使用輔助程序播放視頻和音頻的一個優勢是，您能夠允許用戶來控制部分或全部播放設置。
+插件可以通過<object> 標籤或者<embed> 標籤添加在頁面中。 
+大多數輔助應用程序允許對音量設置和播放功能（比如後退、暫停、停止和播放）的手工（或程序的）控制。
+我們可以使用<video> 和<audio> 標籤來顯示視頻和音頻
+
+<object> 元素
+所有主流瀏覽器都支持<object> 標籤。        
+<object> 元素定義了在HTML 文檔中嵌入的對象。        
+該標籤用於插入對象(例如在網頁中嵌入Java 小程序, PDF 閱讀器, Flash 播放器) 。
+<object data="logo.png"></object>
+<object height="50" width="100" data="horse.mp3"></object>
+
+<embed> 元素
+所有主流瀏覽器都支持<embed> 元素。
+<embed> 元素表示一個HTML Embed 對象。
+<embed> 元素已經出現很長一段時間了，但是在HTML5 前並未被詳細說明，該元素在HTML 5 頁面上會被驗證，在HTML 4 上不會。
+<embed src="logo.png">
+<embed height="50" width="100" src="horse.mp3">
+
+使用HTML5 <audio> 元素
+HTML5 <audio> 元素是一個HTML5 元素，在HTML 4 中是非法的，但在所有瀏覽器中都有效。
+The <audio> element works in all modern browsers.
+以下我們將使用<audio> 標籤來描述MP3 文件(Internet Explorer、Chrome 
+以及Safari 中是有效的), 同樣添加了一個OGG 類型文件(Firefox 和Opera瀏覽器中有效).如果失敗，它會顯示一個錯誤文本信息:
+
+下面的例子使用了两个不同的音频格式。
+HTML5 <audio> 元素会尝试以 mp3 或 ogg 来播放音频。如果失败，代码将回退尝试 <embed> 元素。
+<audio controls>
+    <source src="horse.mp3" type="audio/mpeg">
+    <source src="horse.ogg" type="audio/ogg">
+    <embed height="50" width="100" src="horse.mp3">
+    Your browser does not support this audio format.
+</audio>
+
+您必須把音頻轉換為不同的格式。
+<embed> 元素無法回退來顯示錯誤消息。
+
+使用超鏈接
+如果網頁包含指向媒體文件的超鏈接，大多數瀏覽器會使用"輔助應用程序"來播放文件。
+以下代碼片段顯示指向mp3文件的鏈接。如果用戶點擊該鏈接，瀏覽器會啟動"輔助應用程序"來播放該文件：
+<a href="horse.mp3"> Play the sound</a>
+
+內聯的聲音說明
+當您在網頁中包含聲音，或者作為網頁的組成部分時，它被稱為內聯聲音。
+如果您打算在 web 應用程序中使用內聯聲音，您需要意識到很多人都覺得內聯聲音令人惱火。
+同時請注意，用戶可能已經關閉了瀏覽器中的內聯聲音選項。
+我們最好的建議是只在用戶希望聽到內聯聲音的地方包含它們。
+一個正面的例子是，在用戶需要聽到錄音並點擊某個鏈接時，會打開頁面然後播放錄音。
+
+HTML  多媒體標籤
+标签	    描述
+<embed>	   定义内嵌对象。HTML4 中不赞成，HTML5 中允许。
+<object>   定义内嵌对象。
+<param>	   定义对象的参数。
+<audio>	   定义了声音内容。
+<video>	   定义一个视频或者影片。
+<source>   定义了media元素的多媒体资源(<video> 和 <audio>)。
+<track>    规定media元素的字幕文件或其他包含文本的文件 (<video> 和<audio>)。-->
+
+<!-- HTML視頻（Video）
+<video> 元素在所有現代瀏覽器中都支持。
+如果均失敗，則回退到<embed> 元素。
+以下HTML 片段會顯示一段嵌入網頁的ogg、mp4 或webm 格式的視頻：  -->
+
+<video width="320" height="240" controls>
+    <source src="movie.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+    <source src="movie.webm" type="video/webm">
+    <object data="movie.mp4" width="320" height="240">
+        <embed src="movie.swf" width="320" height="240">
+    </object> 
+</video>
+
+<!-- 使用超鏈接 
+如果網頁包含指向媒體文件的超鏈接，大多數瀏覽器會使用"輔助應用程序"來播放文件。
+以下代碼片段顯示指向AVI 文件的鏈接。如果用戶點擊該鏈接，瀏覽器會啟動"輔助應用程序"，
+比如Windows Media Player 來播放這個AVI 文件：
+<a href="intro.swf">Play a video file</a> -->
+
+<!-- 使用<embed> 標籤
+<embed> 標籤的作用是在HTML 頁面中嵌入多媒體元素。 
+下面的HTML 代碼顯示嵌入網頁的Flash 視頻：
+<embed src="movie." height="200" width="200"> -->
+
+<!-- 使用<object> 標籤
+<object> 標籤的作用是在HTML 頁面中嵌入多媒體元素。
+下面的HTML 片段顯示嵌入網頁的一段Flash 視頻：
+<object data="intro.swf" height="200" width="200"></object> -->
+
+<!-- HTML 多媒體標籤
+标签	描述
+<embed>	定义内嵌对象。HTML4 中不赞成，HTML5 中允许。
+<object>定义内嵌对象。
+<param>	定义对象的参数。
+<audio>	定义了声音内容
+<video>	定义一个视频或者影片
+<source>定义了media元素的多媒体资源(<video> 和 <audio>)
+<track>	规定media元素的字幕文件或其他包含文本的文件 (<video> 和<audio>) -->

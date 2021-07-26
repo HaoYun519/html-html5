@@ -1,0 +1,166 @@
+HTML5 Geolocation（地理定位）定位用户的位置
+HTML5 Geolocation API 用于获得用户的地理位置。
+鉴于该特性可能侵犯用户的隐私，除非用户同意，否则用户位置信息是不可用的。
+
+下例是一个简单的地理定位实例，可返回用户位置的经度和纬度:
+<!-- <!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+</head>
+<body>
+<p id="demo">点击按钮获取您当前坐标（可能需要比较长的时间获取）：</p>
+<button onclick="getLocation()">点我</button>
+<script>
+var x=document.getElementById("demo");
+function getLocation()
+{
+	if (navigator.geolocation)
+	{
+		navigator.geolocation.getCurrentPosition(showPosition);
+	}
+	else
+	{
+		x.innerHTML="该浏览器不支持获取地理位置。";
+	}
+}
+
+function showPosition(position)
+{
+	x.innerHTML="纬度: " + position.coords.latitude + 
+	"<br>经度: " + position.coords.longitude;	
+}
+</script>
+</body>
+</html> -->
+
+处理错误和拒绝 
+getCurrentPosition() 方法的第二个参数用于处理错误。它规定当获取用户位置失败时运行的函数：
+<!-- <!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+</head>
+<body>
+<p id="demo">点击按钮获取您当前坐标（可能需要比较长的时间获取）：</p>
+<button onclick="getLocation()">点我</button>
+<script>
+var x=document.getElementById("demo");
+function getLocation()
+{
+	if (navigator.geolocation)
+	{
+		navigator.geolocation.getCurrentPosition(showPosition,showError);
+	}
+	else
+	{
+		x.innerHTML="该浏览器不支持定位。";
+	}
+}
+function showPosition(position)
+{
+	x.innerHTML="纬度: " + position.coords.latitude + 
+	"<br>经度: " + position.coords.longitude;	
+}
+function showError(error)
+{
+	switch(error.code) 
+	{
+		case error.PERMISSION_DENIED:
+			x.innerHTML="用户拒绝对获取地理位置的请求。"
+			break;
+		case error.POSITION_UNAVAILABLE:
+			x.innerHTML="位置信息是不可用的。"
+			break;
+		case error.TIMEOUT:
+			x.innerHTML="请求用户地理位置超时。"
+			break;
+		case error.UNKNOWN_ERROR:
+			x.innerHTML="未知错误。"
+			break;
+	}
+}
+</script>
+</body>
+</html> -->
+
+如需在地图中显示结果，您需要访问可使用经纬度的地图服务，比如谷歌地图或百度地图：
+<!-- <!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+</head>
+<body>
+<p id="demo">点击按钮获取您当前坐标（可能需要比较长的时间获取）：</p>
+<button onclick="getLocation()">点我</button>
+<div id="mapholder"></div>
+<script>
+var x=document.getElementById("demo");
+function getLocation()
+{
+	if (navigator.geolocation)
+	{
+		navigator.geolocation.getCurrentPosition(showPosition,showError);
+	}
+	else
+	{
+		x.innerHTML="该浏览器不支持获取地理位置。";
+	}
+}
+
+function showPosition(position)
+{
+	var latlon=position.coords.latitude+","+position.coords.longitude;
+
+	var img_url="http://maps.googleapis.com/maps/api/staticmap?center="
+	+latlon+"&zoom=14&size=400x300&sensor=false";
+	document.getElementById("mapholder").innerHTML="<img src='"+img_url+"'>";
+}
+
+function showError(error)
+{
+	switch(error.code) 
+	{
+		case error.PERMISSION_DENIED:
+			x.innerHTML="用户拒绝对获取地理位置的请求。"
+			break;
+		case error.POSITION_UNAVAILABLE:
+			x.innerHTML="位置信息是不可用的。"
+			break;
+		case error.TIMEOUT:
+			x.innerHTML="请求用户地理位置超时。"
+			break;
+		case error.UNKNOWN_ERROR:
+			x.innerHTML="未知错误。"
+			break;
+	}
+}
+</script>
+</body>
+</html> -->
+
+给定位置的信息
+本页演示的是如何在地图上显示用户的位置。
+地理定位对于给定位置的信息同样很有用处。
+可用于:
+    更新本地信息
+    显示用户周围的兴趣点
+    交互式车载导航系统 (GPS)
+
+getCurrentPosition() 方法 - 返回数据
+T若成功，则 getCurrentPosition() 方法返回对象。
+始终会返回 latitude、longitude 以及 accuracy 属性。
+如果可用，则会返回其他下面的属性。
+
+属性	            描述
+coords.latitude	    十进制数的纬度
+coords.longitude	十进制数的经度
+coords.accuracy	    位置精度
+coords.altitude	    海拔，海平面以上以米计
+coords.altitudeAccuracy	位置的海拔精度
+coords.heading  	方向，从正北开始以度计
+coords.speed	    速度，以米/每秒计
+timestamp	        响应的日期/时间

@@ -1,0 +1,101 @@
+HTML5 Video(视频)
+很多站点都会使用到视频. HTML5 提供了展示视频的标准。
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+</head>
+<body> 
+
+<div style="text-align:center"> 
+  <button onclick="playPause()">播放/暂停</button> 
+  <button onclick="makeBig()">放大</button>
+  <button onclick="makeSmall()">缩小</button>
+  <button onclick="makeNormal()">普通</button>
+  <br> 
+  <video id="video1" width="420">
+    <source src="mov_bbb.mp4" type="video/mp4">
+    <source src="mov_bbb.ogg" type="video/ogg">
+    您的浏览器不支持 HTML5 video 标签。
+  </video>
+</div> 
+
+<script> 
+var myVideo=document.getElementById("video1"); 
+
+function playPause()
+{ 
+	if (myVideo.paused) 
+	  myVideo.play(); 
+	else 
+	  myVideo.pause(); 
+} 
+
+	function makeBig()
+{ 
+	myVideo.width=560; 
+} 
+
+	function makeSmall()
+{ 
+	myVideo.width=320; 
+} 
+
+	function makeNormal()
+{ 
+	myVideo.width=420; 
+} 
+</script> 
+
+</body> 
+</html>
+
+<!-- HTML5 <video> - 使用 DOM 进行控制
+    HTML5 <video> 和 <audio> 元素同样拥有方法、属性和事件。
+    <video> 和 <audio>元素的方法、属性和事件可以使用JavaScript进行控制.
+    其中的方法用于播放、暂停以及加载等。其中的属性（比如时长、音量等）可以被读取或设置。
+    其中的 DOM 事件能够通知您，比方说，<video> 元素开始播放、已暂停，已停止，等等。
+    例中简单的方法，向我们演示了如何使用 <video> 元素，读取并设置属性，以及如何调用方法。 -->
+
+<!-- HTML5 Video
+    标签	    描述
+    <video>	    定义一个视频
+    <source>	定义多种媒体资源,比如 <video> 和<audio>
+    <track>	    定义在媒体播放器文本轨迹 -->
+
+<!-- =================================================================== -->
+
+HTML5 Audio(音频)
+HTML5 提供了播放音频文件的标准。
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+</head>
+<body>
+
+<audio controls>
+    <source src="horse.ogg" type="audio/ogg">
+    <source src="horse.mp3" type="audio/mpeg">
+您的浏览器不支持 audio 元素。
+</audio>
+
+</body>
+</html>
+
+<!-- control 属性供添加播放、暂停和音量控件。
+在<audio> 与 </audio> 之间你需要插入浏览器不支持的<audio>元素的提示文本。
+<audio> 元素允许使用多个 <source> 元素. <source> 元素可以链接不同的音频文件，浏览器将使用第一个支持的音频文件
+
+音频格式的MIME类型
+Format	MIME-type
+MP3	    audio/mpeg
+Ogg	    audio/ogg
+Wav	    audio/wav
+    
+HTML5 Audio 
+标签	    描述
+<audio>	    定义了声音内容
+<source>    规定了多媒体资源, 可以是多个，在 <video> 与 <audio>标签中使用 -->
